@@ -1,18 +1,25 @@
 #include <stdio.h>
-
-int main(void)
-{
-    putchar(48);
-    putchar(49);
-    putchar(50);
-    putchar(51);
-    putchar(52);
-    putchar(53);
-    putchar(54);
-    putchar(55);
-    putchar(56);
-    putchar(57);
-    putchar('\n');
-    
-    return 0;
+/**
+* main - entry point.
+*
+* Description: Program that prints all base 10 single digit numbers.
+* Return: Zero,0.
+*/
+int main() {
+int i = 0;
+while (i < 10) {
+	if (i < 9)
+	{
+		putchar(i + '0');
+		putchar('\n');
+	}
+	else
+	{
+		putchar('9');
+		putchar('\n');
+	}
+i++;
 }
+return (0);
+}
+
