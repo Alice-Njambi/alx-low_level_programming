@@ -1,6 +1,8 @@
 #include <stdio.h>
 
 /**
+ * Main entry.
+ *
  * Description: Program that prints the alphabet in lowercase.
  */
 int main(void)
