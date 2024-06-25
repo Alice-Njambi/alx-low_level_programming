@@ -10,9 +10,9 @@ int main(void)
 char ch = '0';
 
 do {
-if ((ch >= '0' && ch <= '9') || (ch >= 'a' && ch <= 'f')) {
+if ((ch >= '0' && ch <= '9') || (ch >= 'a' && ch <= 'f')) 
 putchar(ch);
-}
+
 ch++;
 } while (ch <= 'f');
 
