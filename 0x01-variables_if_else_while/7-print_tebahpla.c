@@ -2,7 +2,8 @@
 /**
  * main - Entry point.
  *
- * Deescription:Program that prints lowercase alphabets in reverse.
+ * Description:Program that prints lowercase alphabets in reverse.
+ * Return: Zero, 0.
  */
 int main(void)
 {
