@@ -1,24 +1,22 @@
 #include <stdio.h>
-
+/**
+* main- Entry point.
+*
+* Description:Program that prints numbers of base 16 in lowercase.
+* Return:Zero, 0.
+*/
 int main(void)
 {
-    putchar('0');
-    putchar('1');
-    putchar('2');
-    putchar('3');
-    putchar('4');
-    putchar('5');
-    putchar('6');
-    putchar('7');
-    putchar('8');
-    putchar('9');
-    putchar('a');
-    putchar('b');
-    putchar('c');
-    putchar('d');
-    putchar('e');
-    putchar('f');
-    putchar('\n');
-    
-    return 0;
+char ch = '0';
+
+do {
+if ((ch >= '0' && ch <= '9') || (ch >= 'a' && ch <= 'f')) {
+putchar(ch);
+}
+ch++;
+} while (ch <= 'f');
+
+putchar('\n');
+
+return (0);
 }
