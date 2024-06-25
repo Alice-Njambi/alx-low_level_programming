@@ -2,7 +2,7 @@
 /**
 * main - entry point.
 *
-* Description: A program that prints the alphabets in lowercase, then in uppercase.
+* Description: Program that prints alphabets in lowercase, then in uppercase.
 * Return: Zero,0.
 */
 int main(void)
@@ -21,5 +21,5 @@ putchar(letter);
 
 putchar('\n');
 
-return 0;
+return (0);
 }
