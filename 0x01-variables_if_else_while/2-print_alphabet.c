@@ -1,5 +1,8 @@
 #include <stdio.h>
 
+/**
+ * Description: Program that prints the alphabet in lowercase.
+ */
 int main(void)
 {
 char letter = 'a';
