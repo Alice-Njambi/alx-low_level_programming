@@ -1,19 +1,16 @@
-#include "main.h"
 #include <stdio.h>
-/**
- * print_putchar: Prints a string of characters.
- *
- * Description - Prints the string "_putchar" on screen display.
- * Return - Zero, 0.
- */
-void print_putchar(void)
-{
-    char str[] = "_putchar";
-    int i = 0;
+#include "math.h"
 
-    while (str[i] != '\0') {
-        putchar(str[i]);
-        i++;
-    }
-    putchar('\n');
+void print_putchar(void);
+/**
+ * main - entry point.
+ * print_putchar - function prints string of characters.
+ *
+ * Description:  Program prints "_putchar" on screen
+ * Return: Zero, 0.
+ */
+int main(void)
+{
+print_putchar();
+return 0;
 }
