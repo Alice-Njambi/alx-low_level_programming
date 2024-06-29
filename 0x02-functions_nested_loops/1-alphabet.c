@@ -2,10 +2,11 @@
 #include "main.h"
 
 /**
- * print_alphabet: Function prints alphabet characters.
+ * print_alphabet: Prints alphabet characters.
+ * putchar: Prints character by character. 
  *
  * Description - Function prints alphabet increment in lowercase.
- * Return - void.
+ * Return - Zero, 0, for success.
  */
 int print_alphabet(void)
 {
