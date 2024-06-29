@@ -7,15 +7,15 @@
  * Description - Function prints alphabet increment in lowercase.
  * Return - void.
  */
-int print_alphabet()
+int print_alphabet(void)
 {
 	char letter = 'a';
-	while (letter <= 'z')
-	{
+
+	while (letter <= 'z'){
 		putchar(letter);
 		letter++;
-	}
-    
+}
+
 	putchar('\n');
-	return 0;
+	return (0);
 }
