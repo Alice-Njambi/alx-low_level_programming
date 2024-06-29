@@ -2,11 +2,10 @@
 #include "math.h"
 
 /**
- * print_putchar: function prints string of characters.
- * _putchar : function that prints characters.
- * @c- The characters to print.
- *
- * return- void.
+ * print_putchar: Function Definition.
+ * 
+ * Description - Function prints using array and loop.
+ * Return- Zero, 0, for success.
  */
 
 int print_putchar()
@@ -17,7 +16,6 @@ int print_putchar()
     for (i = 0; str[i] != '\0'; i++) {
         putchar(str[i]);
     }
-
-    putchar('\n');
+ 
     return 0;
 }
