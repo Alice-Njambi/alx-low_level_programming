@@ -1,12 +1,12 @@
 #include"main.h"
 
 /**
- *reset_to_98-Updatesthevalueofanintegerto98.
- *@n:Apointertoaninteger.
+ *reset_to_98-Updates the value of aninteger to 98.
+ *@n:A pointer to an integer.
  *
  *Return:void
  */
-void reset_to_98(int*n)
+void reset_to_98(int *n)
 {
-*n=98;
+*n = 98;
 }
