@@ -1,4 +1,3 @@
-#include <stdio.h>
 #include "main.h"
 
 /**
@@ -14,22 +13,48 @@ for (i = 1; i <= 100; i++)
 {
 if (i % 3 == 0 && i % 5 == 0)
 {
-printf("FizzBuzz ");
+_putchar('F');
+_putchar('i');
+_putchar('z');
+_putchar('z');
+_putchar('B');
+_putchar('u');
+_putchar('z');
+_putchar('z');
+_putchar(' ');
 }
 else if (i % 3 == 0)
 {
-printf("Fizz ");
+_putchar('F');
+_putchar('i');
+_putchar('z');
+_putchar('z');
+_putchar(' ');
 }
 else if (i % 5 == 0)
 {
-printf("Buzz ");
+_putchar('B');
+_putchar('u');
+_putchar('z');
+_putchar('z');
+_putchar(' ');
 }
 else
 {
-printf("%d ", i);
+/* Convert the number to string and print each digit */
+int num = i;
+if (num >= 10)
+{
+_putchar(num / 10 + '0');
+_putchar(num % 10 + '0');
+}
+else
+{
+_putchar(num + '0');
+}
+_putchar(' ');
 }
 }
 
-printf("\n");
+_putchar('\n');
 }
-
