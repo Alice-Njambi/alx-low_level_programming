@@ -34,7 +34,7 @@ n /= i;
 if (n > 2)
 largest_factor = n;
 
-return largest_factor;
+return (largest_factor);
 }
 
 int main(void)
@@ -44,5 +44,5 @@ long largest_prime = largest_prime_factor(number);
 
 printf("%ld\n", largest_prime);
 
-return 0;
+return (0);
 }
