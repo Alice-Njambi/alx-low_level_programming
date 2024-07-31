@@ -1,15 +1,18 @@
-#include "main.h"  /* Include the header file containing the prototype */
+#include "function_pointers.h"
+#include <stdlib.h>
 /**
-* print_name - prints a name using the function pointed to by f
-* @name: name of the person
-* @f: function pointer to the function used to print the name
+* print_name - prints a name using a provided function
+* @name: the name to print
+* @f: pointer to the function to use for printing
 *
-* Return: Nothing.
+* Description: This function takes a string 'name' and a function pointer 'f'.
+* If both are non-null, it calls the function pointed to by 'f', passing 'name'
+* as an argument to that function.
 */
 void print_name(char *name, void (*f)(char *))
 {
-if (name && f)  /* Check if name and function pointer are not NULL */
-{
-f(name);  /* Call the function pointed to by f, passing name as the argument */
-}
+/* Check if both 'name' and 'f' are not null */
+if (name && f)
+/* Call the function pointed to by 'f' with 'name' as an argument */
+f(name);
 }

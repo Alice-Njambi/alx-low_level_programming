@@ -1,5 +1,5 @@
-#include <stdio.h>  /* Include the standard I/O library for printf */
-#include "main.h"  /* Include the custom header file */
+#include <stdio.h>
+#include "function_pointers.h"
 /**
 * print_name_as_is - prints a name as is
 * @name: name of the person
@@ -8,7 +8,8 @@
 */
 void print_name_as_is(char *name)
 {
-printf("Hello, my name is %s\n", name);  /* Print the name as is */
+/* Print the name as is */
+printf("Hello, my name is %s\n", name);
 }
 /**
 * print_name_uppercase - print a name in uppercase
@@ -18,22 +19,25 @@ printf("Hello, my name is %s\n", name);  /* Print the name as is */
 */
 void print_name_uppercase(char *name)
 {
-unsigned int i;  /* Declare an unsigned integer for iteration */
-printf("Hello, my uppercase name is ");  /* Print the introduction */
-i = 0;  /* Initialize the iterator */
-while (name[i])  /* Loop through each character in the name */
+unsigned int i;
+/* Print a prefix message */
+printf("Hello, my uppercase name is ");
+/* Iterate through each character of the name */
+i = 0;
+while (name[i])
 {
-if (name[i] >= 'a' && name[i] <= 'z')  /* Check if the character is lowercase */
+/* If the character is lowercase, convert to uppercase */
+if (name[i] >= 'a' && name[i] <= 'z')
 {
-putchar(name[i] + 'A' - 'a');  /* Convert lowercase to uppercase and print */
+putchar(name[i] + 'A' - 'a');
 }
 else
 {
-putchar(name[i]);  /* Print the character as is if it's not lowercase */
+/* Otherwise, print the character as is */
+putchar(name[i]);
 }
-i++;  /* Move to the next character */
+i++;
 }
-printf("\n");  /* Print a new line after the name */
 }
 /**
 * main - check the code
@@ -42,7 +46,12 @@ printf("\n");  /* Print a new line after the name */
 */
 int main(void)
 {
-print_name("Bob", print_name_as_is);  /* Print the name "Bob" as is */
-print_name("Bob Dylan", print_name_uppercase);  /* Print the name "Bob Dylan" in uppercase */
-return (0);  /* Return 0 to indicate successful execution */
+/* Print the name "Bob" as is */
+print_name("Bob", print_name_as_is);
+/* Print the name "Bob Dylan" in uppercase */
+print_name("Bob Dylan", print_name_uppercase);
+/* Print a newline for better output formatting */
+printf("\n");
+/* Return 0 to indicate successful execution */
+return (0);
 }
