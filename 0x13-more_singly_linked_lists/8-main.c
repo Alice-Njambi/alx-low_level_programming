@@ -1,7 +1,7 @@
-#include <stdlib.h>    /* For malloc and free */
-#include <string.h>    /* For string manipulation functions. */
-#include <stdio.h>     /* For printf function */
-#include "lists.h"     /* For the listint_t type and function prototypes */
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
+#include "lists.h"
 
 /**
 * main - Entry point for the program to test the sum_listint function.
