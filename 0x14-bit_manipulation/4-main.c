@@ -25,5 +25,5 @@ n = 98;
 clear_bit(&n, 1);
 printf("%lu\n", n); /* Expected output: 96 */
 
-return (0);
+return 0;
 }
