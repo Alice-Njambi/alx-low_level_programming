@@ -1,21 +1,21 @@
-#include <stdio.h>
-#include "math.h"
+#include "main.h"
 
 /**
- * print_putchar: Function Definition.
- * 
- * Description - Function prints using array and loop.
- * Return- Zero, 0, for success.
- */
-
-int print_putchar()
+* main - prints "_putchar" followed by a new line
+* 
+* Return: Always 0 (Success)
+*/
+int main(void)
 {
-    char str[] = "_putchar";
-    int i;
+_putchar('_');
+_putchar('p');
+_putchar('u');
+_putchar('t');
+_putchar('c');
+_putchar('h');
+_putchar('a');
+_putchar('r');
+_putchar('\n');
 
-    for (i = 0; str[i] != '\0'; i++) {
-        putchar(str[i]);
-    }
- 
-    return 0;
+return 0;
 }
