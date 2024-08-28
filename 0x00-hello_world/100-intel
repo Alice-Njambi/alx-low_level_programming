@@ -1,13 +1,2 @@
 #!/bin/bash
-
-# Check if CFILE environment variable is set
-if [ -z "$CFILE" ]; then
-    echo "Error: CFILE environment variable is not set."
-    exit 1
-fi
-
-# Extract the base name of the C file without extension
-BASENAME=$(basename "$CFILE" .c)
-
-# Compile the C file to assembly code in Intel syntax
-gcc -S -masm=intel "$CFILE" -o "${BASENAME}.s"
+gcc -S -masm=intel "$CFILE" -o "${CFILE%.c}.s"
