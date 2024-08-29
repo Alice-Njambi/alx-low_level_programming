@@ -16,14 +16,14 @@ unsigned int i;
 /* Check if size is 0.*/
 if (size == 0)
 {
-return NULL;
+return (NULL);
 }
 
 /* Allocate memory for the array.*/
 array = (char *)malloc(size * sizeof(char));
 if (array == NULL)
 {
-return NULL;
+return (NULL);
 }
 
 /* Initialize the array with the character 'c'. */
