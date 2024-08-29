@@ -29,7 +29,7 @@ len++;  /* For the newline character */
 }
 len++;  /* For the null terminator */
 
-str = malloc(len * sizeof(char));
+str = malloc(len *sizeof(char));
 if (str == NULL)
 {
 return (NULL);
